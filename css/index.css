@@ -171,7 +171,7 @@ select ,input{border: none;}
 .mayor_link li:nth-child(4) a.mayor_item::before{background-position-x: -132px;}
 /* // group 1 */
 
-.group2 {width: 100%;margin: 30px 0 30px 0; background: #f5f8f9;}
+.group2 {width: 100%; background: #f5f8f9;}
 .group2>.inner{display: flex;}
 
 #tabs{width: 737px;float: left;position: relative;}
@@ -190,7 +190,7 @@ select ,input{border: none;}
 .news_tit a {padding-left: 15px;}
 .noticelist_area a {display: block;color: #000;font-size: 16px;line-height: 55px;text-align: center;}
 .service_area{position: relative;}
-.service_area h5 {font-size: 30px;color: #333;font-weight: 600;}
+.service_area h5 {font-size: 30px;color: #333;font-weight: 600;text-align: left;padding: 35px 0;}
 .service_area .tab_menu{margin: 20px 0;}
 .service_box {margin-top: 20px;position: relative;overflow: hidden;display: flex;}
 .service_box li{width: 180px;margin-right: 10px;}
@@ -212,22 +212,19 @@ select ,input{border: none;}
   display: block;
 }
 
-#tab1:checked ~ nav .tab1,
-#tab2:checked ~ nav .tab2,
-#tab3:checked ~ nav .tab3,
-#tab4:checked ~ nav .tab4,
-#tab5:checked ~ nav .tab5 {
-  color: red;
-}
-.pc-tab {width: 100%;max-width: 700px;margin: 0 auto;}
-.pc-tab ul {width: 700px;display: flex;}
-.pc-tab ul li{width: 20%;}
-.pc-tab ul li label {float: left;background: #fff;color: #333;cursor: pointer;border-radius: 10px;height: 65px;font-size: 21px;display: flex;align-items: center;}
-.pc-tab ul li label:hover {background: #dddddd;}
-.pc-tab ul li label:active {background: #ffffff;}
-.pc-tab ul li:not(:last-child) label {border-right-width: 0;}
+.pc-tab {width: 100%;max-width: 950px;}
+.pc-tab ul {display: flex;}
+.pc-tab ul li{width: 20%;padding-right: 10px;}
+.pc-tab ul li:last-child{padding-right: 0px;}
+.pc-tab ul li label {background: #fff;color: #333;cursor: pointer;border-radius: 10px;height: 65px;font-size: 21px;display: flex;align-items: center;padding: 0 11px;width: 80%;justify-content: center;}
+.tab_list li label::before{display: inline-block;background-repeat: no-repeat;}
+.tab_list li:first-child label::before{content: "";background-image: url(../img/mainService_01.png);width: 40px;height: 31px;}
+.tab_list li:nth-child(2) label::before{content: "";background-image: url(../img/mainService_02.png);width: 29px;height: 43px;}
+.tab_list li:nth-child(3) label::before{content: "";background-image: url(../img/mainService_03.png);width: 39px;height: 40px;}
+.tab_list li:nth-child(4) label::before{content: "";background-image: url(../img/mainService_04.png);width: 37px;height: 32px;}
+.tab_list li:nth-child(5) label::before{content: "";background-image: url(../img/mainService_05.png);width: 34px;height: 33px;}
 .pc-tab .cont_area div {padding: 20px 0;letter-spacing: 0.3px;color: #444;text-align: left;}
-.pc-tab .cont_area div a{padding: 0 5px;background-color: #fff;display: inline-flex;margin:0 12px 5px 0px;height: 55px; border-radius: 7px;align-items: center;}
+.pc-tab .cont_area div a{padding: 0 5px;background-color: #fff;display: inline-flex;margin:0 12px 5px 0px;height: 55px; border-radius: 7px;align-items: center;width: 211px;}
 
 #tab1:checked ~ nav .tab1 label,
 #tab2:checked ~ nav .tab2 label,
@@ -353,17 +350,8 @@ select ,input{border: none;}
     position: relative;
     border: 1px solid #eaeaea;
     border-bottom: 0;
-    /* background: #394f79; */
     border-radius: 15px 15px 0 0;
     margin-top: 7px;
-}
-.tab_list li:last-child::after{
-    content: '';
-    background: url(../img/interlock_ico.png) no-repeat;
-    width: 14px;
-    height: 14px;
-    display: inline-block;
-    background-size: cover;
 }
 .noticebn_box ul {
     width: 100%;
