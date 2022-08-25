@@ -2,7 +2,7 @@ $(function () {
 	$('.autoplay').bxSlider({
       mode: 'horizontal', 
       speed:2000,
-	  slideMargin: 30,
+	  slideMargin: 10,
       auto: true,
       controls: true,
       nextText: 'Next',
