@@ -366,6 +366,8 @@ select ,input{border: none;}
 .event_txt .date {color: #777;display:flex;align-items: center;height: 24px;}
 .event_txt .cate{border: 1px solid #ddd;border-radius: 24px;display: flex;align-items: center;justify-content: center;width: 50px;height: 24px;}
 .event_txt .cate_green{color: #7c9927;border-color: #7c9927;}
+.event_txt .cate_pupple{color: #9363c0;border-color: #8252c0;}
+.event_txt .cate_blue{color: #3f5f9c;border-color: #3f5f9c;}
 /* // group4 */
 
 .sns_area {width: 360px;border-left: none;box-sizing: border-box;overflow: hidden;}
@@ -384,179 +386,26 @@ select ,input{border: none;}
 
 .snsbn_box {width: 528px;height: 375px;overflow: hidden;position: relative;}
 .snsbn_box ul {width: 100%;height: 324px;position: absolute;top: 0;display: flex;flex-wrap: wrap;}
-.snsbn_box li {width: 264px;margin-top: 35px;}
-.snsbn_box li a{display: block;margin: 0 20px;position: relative;}
+.snsbn_box li {width: 264px;margin-top: 20px;}
+.snsbn_box li a{display: block;margin: 0 20px;position: relative;border-radius: 15px;overflow: hidden;}
 .sns_img {width: 242px;height: 140px;position: relative;background-size: 242px 140px !important;}
-.snsbn_box .list1 li:nth-child(1) .sns_img {
-    background: url(https://www.seongnam.go.kr/attach/mainSns/20220227193021_B.jpg) no-repeat;
-}
-.snsbn_box ul li .sns_img::after {
-    content: '';
-    width: 34px;
-    height: 34px;
-    position: absolute;
-    top: -17px;
-    left: 5px;
-}
-.sns_txt {
-    width: 242px;
-    padding: 5px;
-    position: absolute;
-    top: 114px;
-    font-size: 15px;
-    color: #fff;
-    font-weight: 600;
-    text-align: center;
-    background-color: rgba(0, 0, 0, .7);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    box-sizing: border-box;
-}
-.snsbn_box .list1 li:nth-child(1) .sns_img::after {
-    background: url(../img/sns_ico05.png);
-}
-.snsbn_box .list1 li:nth-child(2) .sns_img {
-    background: url(../img/20220314193212_V.jpg);
-}
-.snsbn_box .list1 li:nth-child(2) .sns_img::after {
-    background: url(../img/sns_ico01.png);
-}
-.snsbn_box .list1 li:nth-child(3) .sns_img {
-    background: url(../img/20211212090859_U.jpg);
-}
-.snsbn_box .list1 li:nth-child(3) .sns_img::after {
-    background: url(../img/sns_ico03.png);
-}
-.snsbn_box .list1 li:nth-child(4) .sns_img {
-    background: url(../img/20211112103107_F.jpg);
-}
-.snsbn_box .list1 li:nth-child(4) .sns_img::after {
-    background: url(../img/sns_ico02.png);
-}
-.snsbn_box a:hover .sns_img::after {
+.snsbn_box .list1 li:nth-child(1) .sns_img {background: url(https://www.seongnam.go.kr/attach/mainSns/20220227193021_B.jpg) no-repeat;}
+.snsbn_box ul li a::after {content: '';width: 34px;height: 34px;position: absolute;top: -17px;left: 5px;}
+.sns_txt {width: 242px;padding: 5px;position: absolute;top: 114px;font-size: 15px;color: #fff;font-weight: 600;text-align: center;background-color: rgba(0, 0, 0, .7);white-space: nowrap;overflow: hidden;text-overflow: ellipsis;box-sizing: border-box;}
+.snsbn_box .list1 li:nth-child(1) .sns_img::after {background: url(../img/sns_ico05.png);}
+.snsbn_box .list1 li:nth-child(2) .sns_img {background: url(../img/20220314193212_V.jpg);}
+.snsbn_box .list1 li:nth-child(2) .sns_img::after {background: url(../img/sns_ico01.png);}
+.snsbn_box .list1 li:nth-child(3) .sns_img {background: url(../img/20211212090859_U.jpg);}
+.snsbn_box .list1 li:nth-child(3) .sns_img::after {background: url(../img/sns_ico03.png);}
+.snsbn_box .list1 li:nth-child(4) .sns_img {background: url(../img/20211112103107_F.jpg);}
+.snsbn_box .list1 li:nth-child(4) .sns_img::after {background: url(../img/sns_ico02.png);}
+.snsbn_box a i{position: absolute;top: 86px;right: 5px;}
+.snsbn_box a:hover i {
     animation: bounce02 .3s ease-in-out 2 alternate;}
 @keyframes bounce02 {
     100% {transform: translateY(-10px);}
 }
-.snsbn_box a:hover .sns_txt {
-    text-decoration: underline;
-}
-
-.group6 {
-    width: 100%;
-    padding: 30px 0 40px;
-    background: #0b264e;
-}
-.important_area {
-    height: 479px;
-}
-.important_area h5 {
-    font-size: 22px;
-    color: #fff;
-    text-align: center;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #22405e;
-}
-.important_area dl {
-    width: 1400px;
-    border-bottom: 1px solid #22405e;
-}
-.important_area .dt_01 {
-    background: url(../img/important01.png) no-repeat center left 30px;
-    width: 180px;
-    line-height: 64px;
-}
-.important_area dl dd {
-    width: 1020px;
-    padding: 16px 0;
-}
-.important_area dl dt span {
-    display: block;
-    font-size: 21px;
-    color: #fff;
-    font-weight: 600;
-    padding: 0 21px 0 75px;
-    text-align: right;
-    background: url(../img/important_arrow.png) no-repeat center right;
-}
-.important_area dl dd a {
-    font-size: 17px;
-    color: #eceef4;
-    line-height: 32px;
-    margin: 0 17px;
-    position: relative;
-}
-.important_area dl dd li a::before {
-    content: '';
-    width: 1px;
-    height: 15px;
-    background: #354f75;
-    position: absolute;
-    top: 50%;
-    right: -25px;
-    margin-top: -7px;
-}
-.important_area dl dd li a span::before {
-    content: '';
-    width: 0;
-    height: 1px;
-    background: #fff;
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    transition: width .2s ease-in-out;
-}
-.important_area dl dd li a span.blank::after {
-    content: '';
-    background: url(../img/importan_blank_ico.png) no-repeat center top 6px;
-    padding-right: 18px;
-}
-.important_area .dt_02 {
-    background: url(../img/important02.png) no-repeat center left 30px;
-    width: 180px;
-    line-height: 64px;
-}
-.important_area .dt_03 {
-    background: url(../img/important03.png) no-repeat center left 30px;
-    width: 180px;
-    line-height: 96px;
-}
-.important_area dl dd li a.orange {
-    color: #faa635;
-}
-.important_area dl dd li a.blue {
-    color: #91d4ff;
-}
-.important_area dl dd li a.green {
-    color: #2be0da;
-}
-.important_area dl dd li a span:hover {color: #fff}
-
-.important_area dl dd li a.blue span:hover {
-    color: #53bafd
-}
-.important_area dl dd li a.orange span:hover {
-    color: #ff6600
-}
-.important_area dl dd li a.green span:hover {
-    color: #24bdb8
-}
-.important_area .dt_04 {
-    background: url(../img/important04.png) no-repeat center left 30px;
-    width: 180px;
-    line-height: 96px;
-}
-.important_area .dt_05 {
-    background: url(../img/important05.png) no-repeat center left 30px;
-    width: 180px;
-    line-height: 96px;
-}
-.important_area dl dd li a.blue span::before {background: #91d4ff;}
-.important_area dl dd li a.orange span::before {background: #faa635;}
-.important_area dl dd li a.green span::before {background: #2be0da;}
-.important_area dl dd li a span:hover::before {width: 100%;}
-/* //group6 */
+.snsbn_box a:hover .sns_txt {text-decoration: underline;}
 
 .footer_inner_line {
     background: #f9f9f9;
