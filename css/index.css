@@ -375,23 +375,16 @@ select ,input{border: none;}
 .sns_slider_btn .slider_prev {width: 9px;height: 15px;margin: 0 10px 0 5px;background: url(../images/notice_bn_prev.png);}
 .sns_slider_btn .slider_stop {width: 12px;height: 14px;margin: 0 10px 0 5px;line-height: 14px;}
 .sns_slider_btn .slider_next {width: 9px;height: 15px;margin: 0 10px 0 5px;background: url(../images/notice_bn_next.png);} */
-.sns_ico {width: 234px;display: flex;}
-.sns_ico_img {width: 34px;height: 34px;margin-left: 5px;}
-.sns_ico li:nth-child(1) .sns_ico_img {background: url(../img/sns_ico01.png);}
-.sns_ico li:nth-child(2) .sns_ico_img {background: url(../img/sns_ico02.png);}
-.sns_ico li:nth-child(3) .sns_ico_img {background: url(../img/sns_ico03.png);}
-.sns_ico li:nth-child(4) .sns_ico_img {background: url(../img/sns_ico04.png);}
-.sns_ico li:nth-child(5) .sns_ico_img {background: url(../img/sns_ico05.png);}
-.sns_ico li:nth-child(6) .sns_ico_img {background: url(../img/sns_ico06.png);}
 
-.snsbn_box {width: 528px;height: 375px;overflow: hidden;position: relative;}
+
+.snsbn_box {width: 528px;height: 324px;overflow: hidden;position: relative;margin-top: 20px;}
 .snsbn_box ul {width: 100%;height: 324px;position: absolute;top: 0;display: flex;flex-wrap: wrap;}
-.snsbn_box li {width: 264px;margin-top: 20px;}
-.snsbn_box li a{display: block;margin: 0 20px;position: relative;border-radius: 15px;overflow: hidden;}
-.sns_img {width: 242px;height: 140px;position: relative;background-size: 242px 140px !important;}
+.snsbn_box li {width: 264px;margin-bottom: 13px;}
+.snsbn_box li a{display: block;margin-right:20px;position: relative;border-radius: 15px;overflow: hidden;}
+.sns_img {width: 242px;height: 155px;position: relative;background-size: 242px 140px !important;}
 .snsbn_box .list1 li:nth-child(1) .sns_img {background: url(https://www.seongnam.go.kr/attach/mainSns/20220227193021_B.jpg) no-repeat;}
 .snsbn_box ul li a::after {content: '';width: 34px;height: 34px;position: absolute;top: -17px;left: 5px;}
-.sns_txt {width: 242px;padding: 5px;position: absolute;top: 114px;font-size: 15px;color: #fff;font-weight: 600;text-align: center;background-color: rgba(0, 0, 0, .7);white-space: nowrap;overflow: hidden;text-overflow: ellipsis;box-sizing: border-box;}
+.sns_txt {width: 242px;padding: 5px;position: absolute;bottom: 0px;font-size: 15px;color: #fff;font-weight: 600;text-align: center;background-color: rgba(0, 0, 0, .7);white-space: nowrap;overflow: hidden;text-overflow: ellipsis;box-sizing: border-box;}
 .snsbn_box .list1 li:nth-child(1) .sns_img::after {background: url(../img/sns_ico05.png);}
 .snsbn_box .list1 li:nth-child(2) .sns_img {background: url(../img/20220314193212_V.jpg);}
 .snsbn_box .list1 li:nth-child(2) .sns_img::after {background: url(../img/sns_ico01.png);}
@@ -406,6 +399,14 @@ select ,input{border: none;}
     100% {transform: translateY(-10px);}
 }
 .snsbn_box a:hover .sns_txt {text-decoration: underline;}
+.sns_ico {width: 360px;display: flex;justify-content: space-between;margin-top: 20px;}
+.sns_ico_img {width: 40px;height: 40px;margin-left: 5px;background-repeat: no-repeat;background-size: cover;background-position: 0 0;}
+.sns_ico li:nth-child(1) .sns_ico_img {background-image: url(../img/sns_ico01.png);}
+.sns_ico li:nth-child(2) .sns_ico_img {background-image: url(../img/sns_ico02.png);}
+.sns_ico li:nth-child(3) .sns_ico_img {background-image: url(../img/sns_ico03.png);}
+.sns_ico li:nth-child(4) .sns_ico_img {background-image: url(../img/sns_ico04.png);}
+.sns_ico li:nth-child(5) .sns_ico_img {background-image: url(../img/sns_ico05.png);}
+.sns_ico li:nth-child(6) .sns_ico_img {background-image: url(../img/sns_ico06.png);}
 
 .footer_inner_line {
     background: #f9f9f9;
