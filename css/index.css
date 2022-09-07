@@ -410,7 +410,7 @@ select ,input{border: none;}
 .sns_ico li:nth-child(5) .sns_ico_img {background-image: url(../img/sns_ico05.png);}
 .sns_ico li:nth-child(6) .sns_ico_img {background-image: url(../img/sns_ico06.png);}
 
-
+#footer > .inner{padding: 30px 0 60px 20px;}
 .familysite_area{border-top: 1px solid #e8e8e8;border-bottom: 1px solid #e8e8e8;}
 .familysite_area .familysite{display: flex;color: #333;}
 .familysite_area .familysite li{width: 33.33%;}
@@ -418,17 +418,16 @@ select ,input{border: none;}
 .familysite_area .familysite li:first-child a{border-left: 1px solid #e8e8e8;}
 .familysite_area .familysite li a::after{content: "";width: 14px;height: 8px;background: url(../img/arr_select2.png) no-repeat 0 0;transition: all .3s;}
 
-.footer_fnb {padding:30px 0 60px 20px;display: flex;}
+.footer_fnb {display: flex;margin-bottom: 25px;}
 .footer_fnb li {margin-right: 15px;padding-right: 18px;line-height: 30px;position: relative;}
 .footer_fnb li a {display: block;}
 .footer_fnb li::after {content: '';width: 3px;height: 3px;background: #bababa;position: absolute;top: 50%;right: 0;border-radius: 100%;}
-.addr_box {width: 100%;padding-left: 414px;}
-.addr {width: 380px;margin-top: 14px;}
-.addr address {padding-right: 17px;font-size: 15px;color: #333;font-style: normal;position: relative;}
-.addr address::after {content: '';width: 1px;height: 13px;background: #d2d2d2;position: absolute;top: 50%;right: 0;margin-top: -6px;}
-.addr cite {margin-top: 5px;font-size: 15px;color: #999;letter-spacing: 0;font-style: normal;}
+.footer_fnb li:last-child::after{display: none;}
+.addr_box {display: flex;flex-direction: column;text-align: left;}
+.addr_box address {padding-right: 17px;font-size: 15px;color: #333;font-style: normal;position: relative;}
+.addr_box address::after {content: '';width: 1px;height: 13px;background: #d2d2d2;position: absolute;top: 50%;right: 0;margin-top: -6px;}
+.addr_box cite {margin-top: 5px;font-size: 15px;color: #999;letter-spacing: 0;font-style: normal;}
 .mark_list {position: absolute;top: -15px;left: 851px;}
-.mark_area{display: flex;justify-content: center;padding: 13px 679px;}
 #back-to-top {position: fixed;bottom: 3em;right: 3em;background: #6a83b5;width: 40px;height: 20px;padding: 10px;line-height: 20px;color: #fff;display: inline-block;text-align: center;text-transform: uppercase;opacity: 0;transition: all .5s;border-radius: 50px;}
 #back-to-top.visible {opacity: 1;}
 .counter {display: none;}
